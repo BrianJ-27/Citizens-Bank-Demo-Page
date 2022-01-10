@@ -537,6 +537,12 @@ Important reminders:
   flex-direction: column;
   align-items: center;
 }
+.flex__container--between {
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
 .wrapper {
   margin: 0 1rem;
@@ -565,15 +571,6 @@ Important reminders:
   color: #000;
   display: inline;
   border-bottom: 1px solid #000;
-}
-
-@media (min-width: 768px) {
-  .card__feature--container {
-    flex-basis: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
 }
 
 .card__feature {

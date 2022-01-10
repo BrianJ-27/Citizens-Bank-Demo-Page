@@ -5,4 +5,8 @@
 
 .flex__container {
   @include flex_me($dir: column, $wrap: wrap, $vertAlign: center);
+  &--between {
+    flex-basis: 100%;
+    @include flex_me($wrap: wrap, $just: space-between);
+  }
 }

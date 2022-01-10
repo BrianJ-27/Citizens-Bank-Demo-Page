@@ -5,13 +5,6 @@
 @use "../utilities/mixins" as *;
 @use "../utilities/placeholders" as *;
 
-.card__feature--container {
-  @include mq("md") {
-    flex-basis: 100%;
-    @include flex_me($wrap: wrap, $just: space-between);
-  }
-}
-
 .card__feature {
   margin: 1rem 0;
   border-bottom: 1px solid v.$color-text-base;
