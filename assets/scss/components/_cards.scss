@@ -48,9 +48,6 @@
   @include mq("md") {
     width: 60%;
   }
-  @include mq("lg") {
-    width: 55%;
-  }
   h4 {
     margin-top: 1rem;
   }

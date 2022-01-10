@@ -633,11 +633,6 @@ Important reminders:
     width: 60%;
   }
 }
-@media (min-width: 1024px) {
-  .card__testimonial {
-    width: 55%;
-  }
-}
 .card__testimonial h4 {
   margin-top: 1rem;
 }
