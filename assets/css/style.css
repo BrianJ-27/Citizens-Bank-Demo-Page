@@ -531,16 +531,24 @@ Important reminders:
   }
 }
 
-.flex__container {
+.flex__container,
+.flex__container--intro,
+.flex__container--between {
   display: flex;
   flex-wrap: wrap;
+}
+
+.flex__container {
+  justify-content: center;
+  align-content: flex-start;
+}
+
+.flex__container--intro {
   flex-direction: column;
   align-items: center;
 }
+
 .flex__container--between {
-  flex-basis: 100%;
-  display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -676,6 +684,7 @@ Important reminders:
 
 .img__person {
   width: 175px;
+  height: 175px;
   padding-bottom: 0.8rem;
 }
 
