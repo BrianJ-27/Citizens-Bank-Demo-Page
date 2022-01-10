@@ -1,0 +1,8 @@
+// **************************************
+// FLEXBOX STYLES
+// **************************************
+@use "../utilities/mixins" as *;
+
+.flex__container {
+  @include flex_me($dir: column, $wrap: wrap, $vertAlign: center);
+}

@@ -1,0 +1,15 @@
+// **************************************
+// LAYOUT CONTAINER / WRAPPER STYLES
+// **************************************
+@use "../utilities/mixins" as *;
+
+.wrapper {
+  margin: 0 1rem;
+  @include mq("md") {
+    margin: 0 2rem;
+  }
+  @include mq("lg") {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+}

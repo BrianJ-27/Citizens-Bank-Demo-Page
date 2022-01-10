@@ -1,0 +1,64 @@
+// **************************************
+// FEATURE CARD STYLES
+// **************************************
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as *;
+@use "../utilities/placeholders" as *;
+
+.card__feature--container {
+  @include mq("md") {
+    flex-basis: 100%;
+    @include flex_me($wrap: wrap, $just: space-between);
+  }
+}
+
+.card__feature {
+  margin: 1rem 0;
+  border-bottom: 1px solid v.$color-text-base;
+  padding: 0 1rem 0 0;
+  &:last-of-type {
+    border-bottom: none;
+    p {
+      padding-bottom: 0rem;
+    }
+  }
+  @include mq("md") {
+    flex-basis: 49%;
+    border-bottom: none;
+    &:nth-of-type(odd) {
+      border-right: 1px solid v.$color-text-base;
+    }
+  }
+  p {
+    padding-bottom: 1rem;
+  }
+}
+
+.card__info--content {
+  background-color: v.$color-secondary;
+  padding: 1rem 0.5rem 0.6rem 0.5rem;
+  @include mq("md") {
+    padding: 1rem 8.2rem 0.6rem 8.2rem;
+  }
+  @include mq("lg") {
+    padding: 1rem 6rem 0.6rem 6rem;
+  }
+}
+
+.card__testimonial {
+  z-index: 2;
+  width: 65%;
+  margin: 2rem auto;
+  &:last-of-type {
+    margin-bottom: 4rem;
+  }
+  @include mq("md") {
+    width: 60%;
+  }
+  @include mq("lg") {
+    width: 55%;
+  }
+  h4 {
+    margin-top: 1rem;
+  }
+}

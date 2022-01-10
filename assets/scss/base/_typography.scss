@@ -1,0 +1,65 @@
+// **************************************
+// TYPOGRAPHY STYLES
+// **************************************
+@use "../utilities" as *;
+
+//h2 styles
+.title__secondary {
+  @include text-prop($size: 1.6em, $f-weight: 500, $color: $color-text-main);
+  @extend %ctr-content;
+  @include mq("md") {
+    @include text-prop($size: 1.4em, $l-height: 1.5);
+  }
+  @include mq("lg") {
+    @include text-prop($size: 1.6em);
+  }
+}
+
+//h3 Styles
+.title__tertiary {
+  @include text-prop($size: 1.25rem, $f-weight: 500, $color: $color-text-main);
+}
+
+//h4 Styles
+.title__quartiary {
+  @include text-prop(
+    $size: 0.9rem,
+    $f-weight: 300,
+    $l-height: 1.5,
+    $color: $color-text-main
+  );
+  @extend %ctr-content;
+}
+
+/*----CONTEXT STYLES----*/
+
+.content {
+  @extend %text-modules;
+  @include text-prop($size: 0.8rem);
+  &--testimonial {
+    position: relative;
+    z-index: 3;
+    line-height: 1.7;
+    font-style: italic;
+    @extend %ctr-content;
+    // For gray quote styles
+    span {
+      font-size: 13rem;
+      position: absolute;
+      z-index: -1;
+      color: $color-text-testimonial;
+      top: -90px;
+      left: -15px;
+    }
+  }
+  &__info--header {
+    background-color: $color-main;
+    padding: 1rem;
+    @extend %ctr-content;
+    @include text-prop(
+      $size: 1.2rem,
+      $l-height: 1.5,
+      $color: $color-text-light
+    );
+  }
+}

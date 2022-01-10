@@ -1,0 +1,47 @@
+// **************************************
+// IMAGE STYLES
+// **************************************
+@use "../utilities" as *;
+
+.img__logo {
+  width: 185px;
+  @extend %ctr-img;
+  padding: 1.5rem 0;
+  @include mq("md") {
+    margin: 0 0;
+    width: 250px;
+  }
+}
+
+.img__hero {
+  position: relative;
+  background-image: url("../../../assets/img/hero-img.png");
+  background-position: -7% 75%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  overflow: hidden;
+  max-height: 500px;
+  @include mq("md") {
+    height: 700px;
+    background-position: 0% 0%;
+  }
+}
+
+.img__overlay {
+  @include mq("lg") {
+    height: 100%;
+    width: calc(70% - 50px);
+    background-color: $color-overlay;
+    position: absolute;
+    right: 0;
+    transform: skewX(-15deg) translateX(30%);
+    opacity: 0.8;
+  }
+}
+
+//Avatar image styling for reviews
+.img__person {
+  width: 175px;
+  padding-bottom: 0.8rem;
+}

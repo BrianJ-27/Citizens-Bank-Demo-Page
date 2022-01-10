@@ -1,0 +1,13 @@
+// **************************************
+// GRID STYLES
+// **************************************
+@use "../utilities/mixins" as *;
+
+/*------GRID LAYOUT STYLES-----------*/
+// Testimonial Grid Layout
+.grid--wrapper {
+  @include mq("md") {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+  }
+}

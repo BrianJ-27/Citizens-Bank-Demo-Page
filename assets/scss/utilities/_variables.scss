@@ -1,0 +1,82 @@
+// **************************************
+// GLOBAL VARIABLES
+// **************************************
+/*-----Descriptive Color Variables-----*/
+$white: #fff;
+$black: #000;
+$serene-midnight: #0d0d0d;
+$light-slate: #eeeeee;
+$relaxed-silver: #b8bcbf;
+$grey: #878787;
+$tire-wheel: #2f2f2f;
+$silver-surfer: #dbdbdb;
+$deep-koamaru: #111e6c;
+$calm-blue: #024873;
+$sophisticated-teal: #025e73;
+$sunflower: #ffbf00;
+$bright-sky: #9de5ff;
+$the-hulk: #3b7a57;
+$algae-green: #93dfb8;
+$amethyst-smoke: #a397b4;
+$barney: #714693;
+$bone: #d4c4a8;
+$almond: #eed9c4;
+$grey-poupon: #af8f2c;
+$apple-blossom: #af4d43;
+$apricot: #eb9373;
+$burnt-orange: #da6304;
+$bean: #3d0c02;
+$bubblegum: #eec1be;
+
+/*-----Project Color Variables-----*/
+$string-bean: #00945f; // main site color
+$sky-green: #ebf7f5; // secondary site color
+$deep-grass: #337a69; // hero overlay color
+$light-slate: #eeeeee; // testimonial double quote color
+$light-olive: #8dac4a; //link color
+$black: #000; // footer link color
+$white: #fff;
+$tangerine: #e97300; // button color
+$cool-grey: #888888; // main text color
+
+/*-----Functional Color Variables-----*/
+$color-main: $string-bean;
+$color-secondary: $sky-green;
+$color-accent: $light-olive;
+
+//background colors
+$color-overlay: $deep-grass;
+
+//Border Colors
+$color-border-light: $color-accent;
+$color-border-dark: $color-main;
+
+//Headings & Paragraph Colors
+$color-text-light: $white;
+$color-text-base: $cool-grey;
+$color-text-main: $color-main;
+$color-text-testimonial: $light-slate;
+$color-text-footer: $black;
+
+//Button Colors
+$color-link-button-default: $tangerine;
+
+//layout
+$max-width: 1200px;
+$max-height: 500px;
+
+//Font Stacks
+$font-stack-main: "Arial", sans-serif;
+$base-font-size: 1rem;
+
+//Breakpoint Sizes
+$mobile-view: 320px;
+$tablet-view: 768px;
+$desktop-view: 1024px;
+
+// Media Query Breakpoint Map
+$breakpoints: (
+  "sm": $mobile-view,
+  "md": $tablet-view,
+  "lg": $desktop-view,
+);
